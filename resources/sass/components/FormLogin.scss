@@ -1,0 +1,38 @@
+.login-form__container {
+	.input__container {
+		width: calc(100% - 14%);
+
+		input {
+			width: 50%;
+		}
+	}
+
+	.buttons__container {
+		margin-top: -48px;
+
+		.submit__button {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.login-form__container {
+
+		width: 100%;
+		
+		.input__container {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.buttons__container {
+			float: none !important;
+			margin-top: auto;
+			text-align: center;
+			.submit__button {
+				width: 100%;
+			}
+		}
+	}
+}

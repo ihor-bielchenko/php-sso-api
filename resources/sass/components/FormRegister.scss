@@ -1,0 +1,53 @@
+.register {
+	&-form {
+		width: 50%;
+		margin: 0 auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #FEF5ED;
+		&__container {
+			display: none;
+			background-color: rgba(0, 0, 0, 0.5);
+			position: fixed;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+.close-btn {
+	height: 25px;
+	width: 25px;
+	background-image: url('/storage/close.png');
+	background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.register {
+
+		&-form {
+			width: 80%;
+			margin: 60px 0 20px;
+
+			&__container {
+				overflow-y: auto;
+			}
+		}
+	}
+
+	.close-btn {
+		right: 0px;
+    	top: -40px;
+	}
+}

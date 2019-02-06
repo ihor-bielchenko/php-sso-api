@@ -1,0 +1,51 @@
+.header__container {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #FEF5ED;
+
+	padding-bottom: 70px;
+	// padding-bottom: 150px;
+	transform: translate(0, -100px);
+	// transform: translate(0, -170px);
+
+	.logo__container {
+		width: 100px;
+		margin: 0 0 46px;
+		padding: 46px 0 4px;
+		font-family: 'Poppins', sans-serif;
+		border-bottom: 3px solid #F47A1F;
+	}
+
+	.promo__container {
+		.promo-item__title {
+			font-size: 44px;
+			line-height: 74px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.header__container {
+		transform: translate(0, -130px);
+		padding-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header__container {
+		padding-bottom: 120px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header__container {
+		padding-bottom: 0;
+		transform: none;
+
+		.container {
+			transform: none !important;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.paragraphs__container {
+	.promo__container {
+		.promo-item__title {
+			font-size: 32px;
+			line-height: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.promo__container {
+		.col-sm {
+			box-sizing: border-box;
+		}
+	}
+}
